@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 2
+
+development:
+  <<: *default
+  database: sick-on-github_development
+
+
+test:
+  <<: *default
+  database: sick-on-github_test
+
+
+production:
+  <<: *default
+  database: sick-on-github_production
+  username: sick-on-github
+  password: <%= ENV['SICK-ON-GITHUB_DATABASE_PASSWORD'] %>
