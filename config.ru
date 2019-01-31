@@ -1,2 +1,2 @@
-require_relative "./server.rb"
+require "./server"
 run GHAapp
