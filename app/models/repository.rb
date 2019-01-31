@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class Repository < ActiveRecord::Base
   before_save: update_badge
   has_one_attached :badge
 
@@ -9,5 +9,8 @@ class User < ActiveRecord::Base
 
   def update_badge
 
+  end
+
+  def exists?
   end
 end

@@ -63,7 +63,7 @@ class GHAapp < Sinatra::Application
     # # # # # # # # # # # #
     case request.env['HTTP_X_GITHUB_EVENT']
     when 'push'
-      # binding.pry
+      binding.pry
       handle_push_event(@payload)
     end
     200 # success status
@@ -77,7 +77,9 @@ class GHAapp < Sinatra::Application
     # # # # # # # # # # # # # # # # #
 
     def handle_push_event(payload)
-      logger.debug 'pushed!'
+      repo_id = payload["repository"]["id"]
+      logger.debug "pushed! to repo #{repo_id}"
+      binding.pry
     end
 
     # Saves the raw payload and converts the payload to JSON format
