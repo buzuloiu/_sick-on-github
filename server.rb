@@ -1,3 +1,5 @@
+source 'https://rubygems.org'
+ruby '2.5.1'
 require 'sinatra'
 require 'octokit'
 require 'dotenv/load' # Manages environment variables
