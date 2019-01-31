@@ -6,7 +6,6 @@ require 'openssl'     # Verifies the webhook signature
 require 'jwt'         # Authenticates a GitHub App
 require 'time'        # Gets ISO 8601 representation of a Time object
 require 'logger'      # Logs debug statements
-require 'pry'
 set :port, 3000
 set :bind, '0.0.0.0'
 
@@ -79,7 +78,6 @@ class GHAapp < Sinatra::Application
     def handle_push_event(payload)
       repo_id = payload["repository"]["id"]
       logger.debug "pushed! to repo #{repo_id}"
-      binding.pry
     end
 
     # Saves the raw payload and converts the payload to JSON format
