@@ -1,7 +1,5 @@
 # Sick on GitHub
 
-## Is your repo sick?
-
 ![image](https://user-images.githubusercontent.com/20449016/52022912-04426f80-24c9-11e9-9290-bc4d68e23501.png)
 
 If your repo is sick, it means that you're shipping 🚢 a lot of awesome code, and that your project is alive. If you slow down, your project gets less sick, or even healthy.

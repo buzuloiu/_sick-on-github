@@ -107,13 +107,16 @@ DEPENDENCIES
   activestorage
   aws-sdk (~> 2)
   dotenv
-  jwt (~> 2.1)
+  jwt
   octokit (~> 4.0)
   pg
   pry
   rake
-  sinatra (~> 2.0)
+  sinatra
   sinatra-activerecord
+
+RUBY VERSION
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.17.1

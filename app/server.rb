@@ -62,7 +62,6 @@ class GHAapp < Sinatra::Application
     # # # # # # # # # # # #
     case request.env['HTTP_X_GITHUB_EVENT']
     when 'push'
-      binding.pry
       handle_push_event(@payload)
     end
     200 # success status
